@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short Stories by Suraj Godiyal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #e0eafc, #cfdef3);
+            animation: fadeIn 1s;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        h2 {
+            font-size: 1.5em;
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            color: #333;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .story-box {
+            background: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .story-box:hover {
+            transform: scale(1.05);
+        }
+        .contact-form {
+            background: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Short Stories</h1>
+    <h2>Suraj Godiyal</h2>
+</header>
+
+<nav>
+    <a href="#about-me">About Me</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#stories">Stories</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="stories">
+    <div class="story-box">
+        <h3>The Last Chance</h3>
+        <p>In "The Last Chance," Jenna, a struggling graphic designer in New Haven, faces unemployment when her print shop closes. Determined to succeed, she enters a prestigious design contest that could lead to her dream job. After overcoming self-doubt and pouring her heart into her work, she becomes a finalist. During her presentation, she shares her passion for resilience and creativity, ultimately earning a position at a top advertising agency, proving that perseverance can turn dreams into reality.</p>
+        <a href="https://surajgodiyal.github.io/The-Last-Chance-/" target="_blank">Read More</a>
+    </div>
+</section>
+
+<section id="about-me">
+    <h2>About Me</h2>
+    <p>Brief about yourself goes here...</p>
+</section>
+
+<section id="reviews">
+    <h2>Reviews</h2>
+    <p>Share the reviews here...</p>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/xeoqqgqo" method="POST" class="contact-form">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="phone">Phone:</label><br>
+        <input type="text" id="phone" name="phone"><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+        <input type="submit" value="Send">
+    </form>
+</section>
+
+<footer>
+    <p>Thank you for visiting!</p>
+</footer>
+
+</body>
+  </html>
