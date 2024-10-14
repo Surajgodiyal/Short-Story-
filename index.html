@@ -18,53 +18,53 @@
             padding: 20px;
             position: relative;
         }
-        h1 {
-            font-size: 2.5em;
-            margin: 0;
+        h1, h2 {
+            margin: 20px 0;
         }
-        h2 {
-            font-size: 1.5em;
-            position: absolute;
-            right: 20px;
-            bottom: 20px;
-            color: #333;
+        .image {
+            display: block;
+            max-width: 80%;
+            margin: 20px auto;
         }
         nav {
             text-align: center;
-            margin: 20px 0;
+            margin: 40px 0;
         }
         nav a {
-            margin: 0 15px;
+            margin: 0 20px;
             text-decoration: none;
             color: #333;
             font-weight: bold;
         }
         .story-box {
             background: #fff;
-            padding: 20px;
-            margin: 20px auto;
+            padding: 30px;
+            margin: 30px auto;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.2s;
+            max-width: 800px;
         }
         .story-box:hover {
             transform: scale(1.05);
         }
         .contact-form {
             background: #fff;
-            padding: 20px;
-            margin: 20px auto;
+            padding: 30px;
+            margin: 30px auto;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
         }
         footer {
             text-align: center;
-            padding: 10px 0;
+            padding: 20px 0;
             background: #333;
             color: #fff;
             position: relative;
             bottom: 0;
             width: 100%;
+            margin-top: 30px;
         }
         @keyframes fadeIn {
             from { opacity: 0; }
@@ -76,7 +76,9 @@
 
 <header>
     <h1>Short Stories</h1>
+    <img src="cf1c85fa-e250-4634-a7f7-97c94cc738c7_20241014_113117_0000.jpg" alt="Image 1" class="image">
     <h2>Suraj Godiyal</h2>
+    <img src="eb2ad8ca-0475-48cd-b587-43f34d4a1cc6_20241014_113503_0000.jpg" alt="Image 2" class="image">
 </header>
 
 <nav>
@@ -122,4 +124,4 @@
 </footer>
 
 </body>
-  </html>
+    </html>
