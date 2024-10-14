@@ -48,6 +48,25 @@
         .story-box:hover {
             transform: scale(1.05);
         }
+        .review-box {
+            background: #ccc;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            max-width: 800px;
+            transition: background 0.5s;
+            cursor: pointer;
+        }
+        .review-box:nth-child(odd) {
+            background: #d3d3d3;
+        }
+        .review-box:nth-child(even) {
+            background: #b3b3b3;
+        }
+        .review-box.clicked {
+            position: absolute;
+            animation: fall 1s forwards;
+        }
         .contact-form {
             background: #fff;
             padding: 30px;
@@ -70,7 +89,16 @@
             from { opacity: 0; }
             to { opacity: 1; }
         }
+        @keyframes fall {
+            0% { top: 0; }
+            100% { top: 90vh; }
+        }
     </style>
+    <script>
+        function animateReview(review) {
+            review.classList.add("clicked");
+        }
+    </script>
 </head>
 <body>
 
@@ -98,12 +126,23 @@
 
 <section id="about-me">
     <h2>About Me</h2>
-    <p>Brief about yourself goes here...</p>
+    <p>Hi, I'm Suraj, a college student with a passion for storytelling. As an overthinker, writing helps me channel my thoughts and emotions. I'm excited to share my stories with you and appreciate any feedback. Looking forward to connecting through words!</p>
 </section>
 
 <section id="reviews">
     <h2>Reviews</h2>
-    <p>Share the reviews here...</p>
+    <div class="review-box" onclick="animateReview(this)">
+        <p><strong>Review by: Yuvi***** (yuvi*****@gmail.com)</strong><br>4/5 stars<br>"Good story! Interesting characters."</p>
+    </div>
+    <div class="review-box" onclick="animateReview(this)">
+        <p><strong>Review by: (geeta*****@gmail.com)</strong><br>4/5 stars<br>"Enjoyed this story. Fun to read."</p>
+    </div>
+    <div class="review-box" onclick="animateReview(this)">
+        <p><strong>Review by: ShiningStar***** (shiningstar*****@outlook.com)</strong><br>4/5 stars<br>"Nice story! Want more like this."</p>
+    </div>
+    <div class="review-box" onclick="animateReview(this)">
+        <p><strong>Review by: Sunny***** (sunny*****@gmail.com)</strong><br>4/5 stars<br>"Great story! Liked the ending."</p>
+    </div>
 </section>
 
 <section id="contact">
@@ -124,4 +163,4 @@
 </footer>
 
 </body>
-    </html>
+        </html>
